@@ -22,8 +22,8 @@ class Enana
             return $this->situacion = "muerta";
         }
     }
-
-    /* public function heridaGrave($a2){
+/* 
+     public function heridaGrave($a2){
         #Se le quita toda la vida que posea hasta tener 0 puntos de vida y cambiarle la situacion a limbo
         if($a2 > 0){
             $a2 = 0;
@@ -44,13 +44,13 @@ class Enana
             $a2 = 0;
         }
     }
- */
+
     public function pocimaExtra($a2){
         #Única manera de devolver a la vida del limbo. Además se otorgarán 50 puntos de vida.
         if($a2 = 0){
             $a2 = 50;
             return $this->situacion = "limbo";
         }
-    }
+    } */
 }
 ?>
