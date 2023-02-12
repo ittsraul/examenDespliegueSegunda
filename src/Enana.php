@@ -44,18 +44,17 @@ class Enana
         #Solo pocimaExtra puede rescatarla del limbo.
         if($this->puntosVida > 0){
             $this->puntosVida += 10;
-            $this->situacion = "limbo";
         }elseif($this->puntosVida = 0){
-            $a2 = 0;
+           $this->situacion = "limbo";
         }
     }
 
     public function pocimaExtra(){
         #Única manera de devolver a la vida del limbo. Además se otorgarán 50 puntos de vida.
-        if($a2 = 0){
-            $a2 = 50;
-            return $this->situacion = "limbo";
-        }
+        if($this->puntosVida === 0){
+            $this->puntosVida += 50;
+            return $this->situacion = "vida";
+        } 
     } 
 }
 ?>
