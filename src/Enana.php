@@ -14,10 +14,16 @@ class Enana
         $this->situacion=$a3;
     }
 
-    public function heridaLeve($a2){
+    public function heridaLeve(){
         #Se le quitan 10 puntos de vida a la Enana y además se cambia el valor de situacion (si fuera necesario)
-        if($a2 > 0){
-            return  $this->situacion = "viva";
+        $this->puntosVida -= 10;
+        
+        if($this->puntosVida > 0){
+           if($this->puntosVida === 0 ){
+                return $this->situacion = "limbo";
+           }else{
+                return $this->situacion = "viva"; 
+           }
         }else{
             return $this->situacion = "muerta";
         }
