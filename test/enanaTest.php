@@ -25,7 +25,7 @@ class EnanaTest extends TestCase {
        
         #Se probará el efecto de una herida grave a una Enana con una situación de viva.
         #Se tendrá que probar que la vida es 0 y además que su situación es limbo
-        $enana = new Enana("Arquera",300,"limbo");
+        $enana = new Enana("Arquera",300,"viva");
         $this->assertEquals("limbo", $enana->heridaGrave());
     } 
     
